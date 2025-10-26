@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Abdullah - Generative & Agentic AI Specialist</title>
+    <meta name="description" content="Muhammad Abdullah - Generative & Agentic AI Specialist designing intelligent systems, generative applications, and autonomous agents that redefine industries.">
+    <meta property="og:title" content="Muhammad Abdullah - AI Specialist">
+    <meta property="og:description" content="Designing intelligent systems and autonomous agents that redefine industries">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://muhammadabdullahAI2502.github.io/My-Portfolio">
+    <meta property="og:image" content="https://muhammadabdullahAI2502.github.io/My-Portfolio/Pic-1.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Muhammad Abdullah - Generative & Agentic AI Specialist">
+    <meta name="twitter:description" content="Self-taught AI specialist building intelligent systems and autonomous agents">
+    <meta name="twitter:image" content="https://muhammadabdullahAI2502.github.io/My-Portfolio/Pic-1.png">
+    <meta name="keywords" content="AI specialist, machine learning, generative AI, agentic AI, portfolio, Muhammad Abdullah">
+    <meta name="author" content="Muhammad Abdullah">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="google-site-verification=abc123def456ghi789jkl012mno345pqr678stu901vwx234yz" />
+    <link rel="canonical" href="https://muhammadabdullahAI2502.github.io/My-Portfolio">
+
+    <!-- HTTPS Security Headers -->
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; default-src 'self' https:; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' https: data:; connect-src 'self' https://www.google-analytics.com;">
+    
+    <!-- Google Search Console -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Muhammad Abdullah",
+        "jobTitle": "AI Specialist",
+        "description": "Generative & Agentic AI Specialist designing intelligent systems and autonomous agents",
+        "url": "https://muhammadabdullahAI2502.github.io/My-Portfolio",
+        "sameAs": [
+            "https://github.com/MuhammadAbdullahAI2502",
+            "https://linkedin.com/in/muhammad-abdullah-ai"
+        ],
+        "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Generative AI", "Agentic AI", "Data Science"]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-cyan': '#00ffff',
+                        'neon-purple': '#5b21b6',
+                        'dark-bg': '#0a0a0a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-white overflow-x-hidden">
+    <!-- Simple Loading Screen -->
+    <div id="loading-screen" class="fixed inset-0 z-[9999] bg-gradient-to-br from-gray-900 via-black to-gray-800 flex items-center justify-center">
+        <div class="text-center max-w-md mx-auto px-4">
+            <!-- Simple Logo/Icon -->
+            <div class="mb-8">
+                <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                    <img src="../Pics/Logo.png" alt="Muhammad Abdullah Logo" class="w-24 h-24 rounded-full object-cover">
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-2">Muhammad Abdullah</h2>
+                <p class="text-neon-cyan">AI Specialist</p>
+            </div>
+
+            <!-- Simple Progress Bar -->
+            <div class="w-full mb-6">
+                <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                    <div id="progress-bar" class="h-full bg-gradient-to-r from-neon-purple to-neon-cyan transition-all duration-300 ease-out" style="width: 0%;"></div>
+                </div>
+                <div class="flex justify-between mt-2 text-sm text-neon-cyan">
+                    <span>Loading...</span>
+                    <span id="loading-percentage">0%</span>
+                </div>
+            </div>
+
+            <!-- Simple Status Text -->
+            <div id="loading-status" class="text-neon-cyan text-sm">Initializing...</div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glassmorphism border-b border-neon-cyan/20">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#home"><img src="../Pics/Logo-1.png" alt="Muhammad Abdullah Logo" class="h-10 w-10 cursor-pointer hover:scale-110 transition-transform duration-300"></a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-neon-cyan hover:scale-105 transition-all duration-300 hover:glow border-b-2 border-transparent hover:border-neon-cyan pb-1">Home</a>
+                    <a href="#about" class="hover:text-neon-cyan hover:scale-105 transition-all duration-300 hover:glow border-b-2 border-transparent hover:border-neon-cyan pb-1">About</a>
+                    <a href="#skills" class="hover:text-neon-cyan hover:scale-105 transition-all duration-300 hover:glow border-b-2 border-transparent hover:border-neon-cyan pb-1">Skills</a>
+                    <a href="#projects" class="hover:text-neon-cyan hover:scale-105 transition-all duration-300 hover:glow border-b-2 border-transparent hover:border-neon-cyan pb-1">Projects</a>
+                    <a href="#contact" class="hover:text-neon-cyan hover:scale-105 transition-all duration-300 hover:glow border-b-2 border-transparent hover:border-neon-cyan pb-1">Contact</a>
+                </div>
+                <button onclick="scrollToSection('contact')" class="hidden md:block px-6 py-2 bg-gradient-to-r from-neon-purple to-neon-cyan rounded-full font-semibold text-white hover:scale-105 transition-transform">
+                    Get Started
+                </button>
+                <button id="mobile-menu" class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-nav" class="hidden md:hidden mt-4 pb-4 border-t border-gray-700 pt-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="hover:text-neon-cyan transition-colors" onclick="closeMobileMenu()">Home</a>
+                    <a href="#about" class="hover:text-neon-cyan transition-colors" onclick="closeMobileMenu()">About</a>
+                    <a href="#skills" class="hover:text-neon-cyan transition-colors" onclick="closeMobileMenu()">Skills</a>
+                    <a href="#projects" class="hover:text-neon-cyan transition-colors" onclick="closeMobileMenu()">Projects</a>
+                    <a href="#contact" class="hover:text-neon-cyan transition-colors" onclick="closeMobileMenu()">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen gradient-bg flex items-center justify-center relative overflow-hidden">
+        <!-- Floating Particles -->
+        <div class="particle w-4 h-4 top-20 left-20" style="animation-delay: 0s;"></div>
+        <div class="particle w-6 h-6 top-40 right-32" style="animation-delay: 2s;"></div>
+        <div class="particle w-3 h-3 bottom-40 left-40" style="animation-delay: 4s;"></div>
+        <div class="particle w-5 h-5 bottom-20 right-20" style="animation-delay: 1s;"></div>
+        
+        <div class="text-center z-10 px-6">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-glow">
+                Muhammad Abdullah
+            </h1>
+            <h2 class="text-2xl md:text-4xl font-semibold mb-4 text-neon-cyan">
+                Generative & Agentic AI Specialist
+            </h2>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-gray-300">
+                Designing intelligent systems, generative applications, and autonomous agents that redefine industries.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="scrollToSection('projects')" class="px-8 py-3 bg-gradient-to-r from-neon-purple to-neon-cyan rounded-full font-semibold hover:scale-105 hover:brightness-110 hover:shadow-2xl hover:shadow-neon-cyan/50 transition-all duration-300 pulse-glow">
+                    🚀 View Projects
+                </button>
+                <button onclick="scrollToSection('contact')" class="px-8 py-3 border-2 border-neon-cyan rounded-full font-semibold hover:bg-neon-cyan hover:text-black transition-all">
+                    🤝 Contact Me
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <h2 class="text-4xl font-bold mb-6 text-glow">About Me</h2>
+                    <div class="space-y-4 text-gray-300">
+                        <p>
+                            Self-taught beyond Matric, I've embarked on an extraordinary journey into the world of Artificial Intelligence. 
+                            My passion lies in creating generative systems and autonomous agents that don't just process data—they understand, 
+                            create, and innovate.
+                        </p>
+                        <p>
+                            From building my first neural network to developing sophisticated multi-agent systems, I've dedicated myself 
+                            to pushing the boundaries of what's possible with AI. Every project is an opportunity to solve real-world 
+                            problems and create meaningful impact.
+                        </p>
+                        <p>
+                            My mission is simple: build AI products that transform industries and improve lives, one intelligent system at a time.
+                        </p>
+                    </div>
+                    <div class="mt-8">
+                        <div class="rotating-text text-neon-cyan font-semibold text-lg">
+                            <span class="inline-block">Innovator</span>
+                            <span class="mx-2">|</span>
+                            <span class="inline-block">Builder</span>
+                            <span class="mx-2">|</span>
+                            <span class="inline-block">Problem Solver</span>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-center md:text-left flex flex-col sm:flex-row gap-4">
+                        <a href="../Pdf/Resume.pdf" download class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-neon-cyan to-violet-600 rounded-lg font-semibold text-black hover:scale-105 hover:glow-cyan transition-all duration-300">
+                            📄 Download CV
+                        </a>
+                        <a href="../Pdf/Abdullah.Letter.pdf" download class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-violet-600 to-neon-purple rounded-lg font-semibold text-white hover:scale-105 hover:glow transition-all duration-300">
+                            ✉️ Cover Letter
+                        </a>
+                    </div>
+                </div>
+                <div class="fade-in flex justify-center">
+                    <div class="w-80 h-80 rounded-full glassmorphism flex items-center justify-center glow">
+                        <div class="w-72 h-72 rounded-full overflow-hidden border-4 border-gradient-to-br from-neon-purple to-neon-cyan">
+                            <img src="../Pics/Pic-1.jpg"
+                                 alt="Muhammad Abdullah - AI Specialist" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 bg-gray-900">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-4xl font-bold mb-4 text-glow animate-pulse">Skills Matrix</h2>
+                <p class="text-gray-300 max-w-3xl mx-auto mb-6">A comprehensive overview of my technical expertise spanning Generative AI, Machine Learning, Data Science, and Full-Stack Development. Each skill represents hands-on experience with cutting-edge technologies and frameworks used to build intelligent systems.</p>
+            </div>
+            
+            <!-- Generative & Agentic AI -->
+            <div class="mb-12">
+                <h3 class="text-xl md:text-2xl font-bold text-neon-cyan mb-4 md:mb-6 text-center"><i class="fas fa-brain text-neon-cyan mr-2"></i>Generative & Agentic AI</h3>
+                <div class="glassmorphism rounded-xl p-8 mb-4 fade-in text-left text-gray-300 border-l-4 border-neon-cyan hover:scale-105 hover:shadow-lg hover:shadow-neon-cyan/20 transition-all duration-300">
+                    <p class="category-intro"><i class="fas fa-brain text-neon-cyan mr-2"></i>Specializing in advanced AI systems that create, reason, and act autonomously to solve complex problems.</p>
+                </div>
+                <div class="h-px bg-gradient-to-r from-transparent via-neon-cyan to-transparent mb-6 md:mb-8"></div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                    <div class="skill-card glassmorphism rounded-xl p-6 text-center hover:scale-105 hover:shadow-lg hover:shadow-neon-cyan/20 transition-all duration-300 fade-in" tabindex="0" aria-label="Generative AI">
+                        <div class="tooltip opacity-0 absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap z-10">Advanced text, image & multimodal AI generation</div>
+                        <i class="fas fa-brain text-3xl text-neon-cyan mb-3"></i>
+                        <h4 class="font-semibold text-white">Generative AI</h4>
+                    </div>
+                    <div class="skill-card glassmorphism rounded-xl p-6 text-center hover:scale-105 hover:shadow-lg hover:shadow-neon-cyan/20 transition-all duration-300 fade-in" tabindex="0" aria-label="Agentic AI">
+                        <div class="tooltip opacity-0 absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap z-10">Autonomous multi-agent systems & decision making</div>
+                        <i class="fas fa-robot text-3xl text-neon-cyan mb-3"></i>
+                        <h4 class="font-semibold text-white">Agentic AI</h4>
+                    </div>
+                    <div class="skill-card glassmorphism rounded-xl p-6 text-center hover:scale-105 hover:shadow-lg hover:shadow-neon-cyan/20 transition-all duration-300 fade-in" tabindex="0" aria-label="LLM Fine-tuning">
+                        <div class="tooltip opacity-0 absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap z-10">Custom model training & optimization</div>
+                        <i class="fas fa-cogs text-3xl text-neon-cyan mb-3"></i>
+                        <h4 class="font-semibold text-white">LLM Fine-tuning</h4>
+                    </div>
+                    <div class="skill-card glassmorphism rounded-xl p-6 text-center hover:scale-105 hover:shadow-lg hover:shadow-neon-cyan/20 transition-all duration-300 fade-in" tabindex="0" aria-label="RAG Systems">
+                        <div class="tooltip opacity-0 absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap z-10">Retrieval-Augmented Generation architectures</div>
+                        <i class="fas fa-search text-3xl text-neon-cyan mb-3"></i>
+                        <h4 class="font-semibold text-white">RAG Systems</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Machine Learning & Deep Learning -->
+            <div class="mb-12">
+                <h3 class="text-xl md:text-2xl font-bold text-neon-cyan mb-4 md:mb-6 text-center"><i class="fas fa-chart-line text-violet-400 mr-2"></i>Machine Learning & Deep Learning</h3>
+                <div class="glassmorphism rounded-xl p-8 mb-4 fade-in text-left text-gray-300 border-l-4 border-violet-500 hover:scale-105 hover:shadow-lg hover:shadow-violet-500/20 transition-all duration-300">
+                    <p class="category-intro"><i class="fas fa-chart-line text-violet-400 mr-2"></i>Building predictive models and neural networks for pattern recognition, classification, and intelligent decision-making.</p>
+                </div>
+                <div class="h-px bg-gradient-to-r from-transparent via-violet-500 to-transparent mb-6 md:mb-8"></div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                    <div class="skill-card glassmorphism rounded-xl p-6 text-center hover:scale-105 hover:shadow-lg hover:shadow-violet-500/20 transition-all duration-300 fade-in" tabindex="0" aria-label="ML Algorithms">
+                        <div class="tooltip opacity-0 absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap z-10">Supervised & unsupervised learning algorithms</div>
+                        <i class="fas fa-chart-line text-3xl text-violet-400 mb-3"></i>
+                        <h4 class="font-semibold text-white">ML Algorithms</h4>
+                    </div>
+                    <div class="skill-card glassmorphism rounded-xl p-6 text-center hover:scale-105 hover:shadow-lg hover:shadow-violet-500/20 transition-all duration-300 fade-in" tabindex="0" aria-label="Neural Networks">
+                        <div class="tooltip opacity-0 absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap z-10">CNNs, RNNs, Transformers & advanced architectures</div>
+                        <i class="fas fa-network-wired text-3xl text-violet-400 mb-3"></i>
+                        <h4 class="font-semibold text-white">Neural Networks</h4>
+                    </div>
+                    <div class="skill-card glassmorphism rounded-xl p-6 text-center hover:scale-105 hover:shadow-lg hover:shadow-violet-500/20 transition-all duration-300 fade-in" tabindex="0" aria-label="PyTorch">
+                        <div class="tooltip opacity-0 absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap z-10">Deep learning framework for research & production</div>
+                        <i class="fas fa-fire text-3xl text-violet-400 mb-3"></i>
+                        <h4 class="font-semibold text-white">PyTorch</h4>
+                    </div>
+                    <div class="skill-card glassmorphism rounded-xl p-6 text-center hover:scale-105 hover:shadow-lg hover:shadow-violet-500/20 transition-all duration-300 fade-in" tabindex="0" aria-label="TensorFlow">
+                        <div class="tooltip opacity-0 absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap z-10">End-to-end machine learning platform</div>
+                        <i class="fas fa-cube text-3xl text-violet-400 mb-3"></i>
+                        <h4 class="font-semibold text-white">TensorFlow</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Science -->
+            <div class="mb-12">
+                <h3 class="text-xl md:text-2xl font-bold text-neon-cyan mb-4 md:mb-6 text-center"><i class="fas fa-database text-indigo-400 mr-2"></i>Data Science</h3>
+                <div class="glassmorphism rounded-xl p-8 mb-4 fade-in text-left text-gray-300 border-l-4 border-indigo-500 hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/20 transition-all duration-300">
+                    <p class="category-intro"><i class="fas fa-database text-indigo-400 mr-2"></i>Transforming raw data into actionable insights through statistical analysis, predictive modeling, and visualization techniques.</p>
+                </div>
+                <div class="h-px bg-gradient-to-r from-transparent via-indigo-500 to-transparent mb-6 md:mb-8"></div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                    <div class="skill-card glassmorphism rounded-xl p-6 text-center hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/20 transition-all duration-300 fade-in" tabindex="0" aria-label="Data Preprocessing">
+                        <div class="tooltip opacity-0 absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap z-10">Data cleaning, transformation & feature engineering</div>
+                        <i class="fas fa-filter text-3xl text-indigo-400 mb-3"></i>
+                        <h4 class="font-semibold text-white">Data Preprocessing</h4>
+                    </div>
+                    <div class="skill-card glassmorphism rounded-xl p-6 text-center hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/20 transition-all duration-300 fade-in" tabindex="0" aria-label="Predictive Modeling">
+                        <div class="tooltip opacity-0 absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap z-10">Building & evaluating predictive models</div>
+                        <div class="flex justify-center space-x-2 mb-3">
+                            <i class="fas fa-crystal-ball text-2xl text-indigo-400"></i>
+                            <i class="fas fa-chart-line text-2xl text-indigo-400"></i>
+                            <i class="fas fa-brain text-2xl text-indigo-400"></i>
+                        </div>
+                        <h4 class="font-semibold text-white">Predictive Modeling</h4>
+                    </div>
+                    <div class="skill-card glassmorphism rounded-xl p-6 text-center hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/20 transition-all duration-300 fade-in" tabindex="0" aria-label="Statistical Analysis">
+                        <div class="tooltip opacity-0 absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap z-10">Hypothesis testing & statistical inference</div>
+                        <i class="fas fa-calculator text-3xl text-indigo-400 mb-3"></i>
+                        <h4 class="font-semibold text-white">Statistical Analysis</h4>
+                    </div>
+                    <div class="skill-card glassmorphism rounded-xl p-6 text-center hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/20 transition-all duration-300 fade-in" tabindex="0" aria-label="Model Deployment">
+                        <div class="tooltip opacity-0 absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap z-10">Model optimization & production deployment</div>
+                        <i class="fas fa-rocket text-3xl text-indigo-400 mb-3"></i>
+                        <h4 class="font-semibold text-white">Model Deployment</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Analytics -->
+            <div class="mb-12">
+                <h3 class="text-xl md:text-2xl font-bold text-neon-cyan mb-4 md:mb-6 text-center"><i class="fas fa-chart-bar text-cyan-400 mr-2"></i>Data Analytics</h3>
+                <div class="glassmorphism rounded-xl p-8 mb-4 fade-in text-left text-gray-300 border-l-4 border-cyan-500 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+                    <p class="category-intro"><i class="fas fa-chart-bar text-cyan-400 mr-2"></i>Extracting meaningful patterns from data through exploratory analysis, dashboard creation, and business intelligence tools.</p>
+                </div>
+                <div class="h-px bg-gradient-to-r from-transparent via-cyan-500 to-transparent mb-6 md:mb-8"></div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                    <div class="skill-card glassmorphism rounded-xl p-6 text-center hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 fade-in" tabindex="0" aria-label="Data Cleaning">
+                        <div class="tooltip opacity-0 absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap z-10">Data quality assessment & cleaning techniques</div>
+                        <i class="fas fa-broom text-3xl text-cyan-400 mb-3"></i>
+                        <h4 class="font-semibold text-white">Data Cleaning</h4>
+                    </div>
+                    <div class="skill-card glassmorphism rounded-xl p-6 text-center hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 fade-in" tabindex="0" aria-label="EDA">
+                        <div class="tooltip opacity-0 absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap z-10">Exploratory Data Analysis & pattern discovery</div>
+                        <i class="fas fa-search-plus text-3xl text-cyan-400 mb-3"></i>
+                        <h4 class="font-semibold text-white">EDA</h4>
+                    </div>
+                    <div class="skill-card glassmorphism rounded-xl p-6 text-center hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 fade-in" tabindex="0" aria-label="Visualization">
+                        <div class="tooltip opacity-0 absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap z-10">Matplotlib, Seaborn & Power BI dashboards</div>
+                        <i class="fas fa-chart-bar text-3xl text-cyan-400 mb-3"></i>
+                        <h4 class="font-semibold text-white">Visualization</h4>
+                    </div>
+                    <div class="skill-card glassmorphism rounded-xl p-6 text-center hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 fade-in" tabindex="0" aria-label="SQL">
+                        <div class="tooltip opacity-0 absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black text-white px-3 py-1 rounded text-sm whitespace-nowrap z-10">Database querying & data manipulation</div>
+                        <i class="fas fa-database text-3xl text-cyan-400 mb-3"></i>
+                        <h4 class="font-semibold text-white">SQL</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-8 text-glow fade-in">Projects Showcase</h2>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12 fade-in">
+                <button class="filter-btn active px-6 py-2 bg-gradient-to-r from-neon-purple to-neon-cyan rounded-full font-semibold text-white hover:scale-105 transition-all" data-filter="all">All</button>
+                <button class="filter-btn px-6 py-2 bg-gradient-to-r from-blue-700 to-blue-800 rounded-full font-semibold text-white hover:scale-105 transition-all" data-filter="nlp">NLP</button>
+                <button class="filter-btn px-6 py-2 bg-gradient-to-r from-emerald-700 to-emerald-800 rounded-full font-semibold text-white hover:scale-105 transition-all" data-filter="ml">ML</button>
+                <button class="filter-btn px-6 py-2 bg-gradient-to-r from-indigo-700 to-indigo-800 rounded-full font-semibold text-white hover:scale-105 transition-all" data-filter="dl">DL</button>
+                <button class="filter-btn px-6 py-2 bg-gradient-to-r from-slate-700 to-slate-800 rounded-full font-semibold text-white hover:scale-105 transition-all" data-filter="rag">RAG</button>
+                <button class="filter-btn px-6 py-2 bg-gradient-to-r from-cyan-700 to-cyan-800 rounded-full font-semibold text-white hover:scale-105 transition-all" data-filter="chatbot">Chatbot</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="glassmorphism rounded-xl overflow-hidden hover:scale-105 hover:glow-cyan transition-all duration-300 fade-in project-card" data-category="chatbot,rag,nlp">
+                    <div class="h-48 bg-gradient-to-br from-neon-purple to-neon-cyan flex items-center justify-center project-image">
+                        <img src="../Pics/Pic-04.png" alt="Ai Finance Screenshot" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">AI Finance Advisor Bot</h3>
+                        <p class="text-gray-300 text-sm mb-4">Intelligent financial advisory system with real-time market analysis</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-neon-purple rounded text-xs">Python</span>
+                            <span class="px-2 py-1 bg-neon-purple rounded text-xs">LangChain</span>
+                            <span class="px-2 py-1 bg-neon-purple rounded text-xs">Groqapi</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/MuhammadAbdullahAI2502/AI-Finance-Bot" target="_blank" rel="noopener noreferrer" class="text-neon-cyan hover:underline text-sm">GitHub</a>
+                            <a href="https://ai-finance-bot-arbtbmvvuatdxlvb7qh9ea.streamlit.app/" target="_blank" rel="noopener noreferrer" class="text-neon-cyan hover:underline text-sm">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="glassmorphism rounded-xl overflow-hidden hover:scale-105 hover:glow-cyan transition-all duration-300 fade-in project-card" data-category="chatbot,nlp">
+                    <div class="h-48 bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center project-image">
+                      <img src="../Pics/Pic-03.png" alt="Fact Buster Bot Screenshot" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Fact Buster Bot</h3>
+                        <p class="text-gray-300 text-sm mb-4">Your intelligent ally against misinformation delivering truth, one fact at a time.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-purple-600 rounded text-xs">Streamlit</span>
+                            <span class="px-2 py-1 bg-purple-600 rounded text-xs">LangChain</span>
+                            <span class="px-2 py-1 bg-purple-600 rounded text-xs">Groq</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/MuhammadAbdullahAI2502/Fact-Buster-Bot" target="_blank" rel="noopener noreferrer" class="text-neon-cyan hover:underline text-sm">GitHub</a>
+                            <a href="https://fact-buster-bot-4mxpsysyfzcyjnbibqnpt3.streamlit.app/" target="_blank" rel="noopener noreferrer" class="text-neon-cyan hover:underline text-sm">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glassmorphism rounded-xl overflow-hidden hover:scale-105 hover:glow-cyan transition-all duration-300 fade-in project-card" data-category="rag,chatbot,nlp">
+                    <div class="h-48 bg-gradient-to-br from-green-500 to-blue-500 flex items-center justify-center overflow-hidden project-image">
+                        <img src="../Pics/Pic-02.png" alt="RAG Chat Assistant Screenshot" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">RAG Chat Assistant</h3>
+                        <p class="text-gray-300 text-sm mb-4">Retrieval-augmented generation chatbot with document understanding</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-green-600 rounded text-xs">Python</span>
+                            <span class="px-2 py-1 bg-green-600 rounded text-xs">Streamlit</span>
+                            <span class="px-2 py-1 bg-green-600 rounded text-xs">ChromaDB</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/MuhammadAbdullahAI2502/Rag-Q-A-App" target="_blank" rel="noopener noreferrer" class="text-neon-cyan hover:underline text-sm">GitHub</a>
+                            <a href="https://rag-q-a-app-b3jclqxlccv3nozsm4aprh.streamlit.app/" target="_blank" rel="noopener noreferrer" class="text-neon-cyan hover:underline text-sm">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="glassmorphism rounded-xl overflow-hidden hover:scale-105 hover:glow-cyan transition-all duration-300 fade-in project-card" data-category="ml">
+                    <div class="h-48 bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center overflow-hidden project-image">
+                        <img src="../Pics/Pic-01.png" alt="Diabetes Prediction App Screenshot" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Diabetes Predictor App</h3>
+                        <p class="text-gray-300 text-sm mb-4">ML-powered diabetes prediction system with interactive web interface</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-indigo-600 rounded text-xs">Python</span>
+                            <span class="px-2 py-1 bg-indigo-600 rounded text-xs">Streamlit</span>
+                            <span class="px-2 py-1 bg-indigo-600 rounded text-xs">Scikit-learn</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/MuhammadAbdullahAI2502/Diabetes-Predictors" target="_blank" rel="noopener noreferrer" class="text-neon-cyan hover:underline text-sm">GitHub</a>
+                            <a href="https://diabetes-predictors-8mzssmwlb3nqfqov3mkyjp.streamlit.app/" target="_blank" rel="noopener noreferrer" class="text-neon-cyan hover:underline text-sm">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="glassmorphism rounded-xl overflow-hidden hover:scale-105 hover:glow-cyan transition-all duration-300 fade-in project-card" data-category="nlp">
+                    <div class="h-48 bg-gradient-to-br from-teal-500 to-blue-500 flex items-center justify-center project-image">
+                        <img src="../Pics/Pic-08.png" alt="AI Content Writer Screenshot" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">AI Content Writer</h3>
+                        <p class="text-gray-300 text-sm mb-4">Advanced NLP-powered content generation tool for blogs, articles, and marketing copy</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-teal-600 rounded text-xs">Python</span>
+                            <span class="px-2 py-1 bg-teal-600 rounded text-xs">GPT-4</span>
+                            <span class="px-2 py-1 bg-teal-600 rounded text-xs">Streamlit</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/MuhammadAbdullahAI2502/AI-Content-Writer" target="_blank" rel="noopener noreferrer" class="text-neon-cyan hover:underline text-sm">GitHub</a>
+                            <a href="https://ai-content-writer-yeafkxsqf2ut4c4kanntfn.streamlit.app/" target="_blank" rel="noopener noreferrer" class="text-neon-cyan hover:underline text-sm">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="glassmorphism rounded-xl overflow-hidden hover:scale-105 hover:glow-cyan transition-all duration-300 fade-in project-card" data-category="chatbot,nlp">
+                    <div class="h-48 bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center project-image">
+                        <img src="../Pics/Pic-06.png" alt="Voice Assistant Bot Screenshot" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Voice Assistant AI</h3>
+                        <p class="text-gray-300 text-sm mb-4">Conversational AI assistant with speech recognition and natural language processing</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-orange-600 rounded text-xs">Python</span>
+                            <span class="px-2 py-1 bg-orange-600 rounded text-xs">SpeechRecognition</span>
+                            <span class="px-2 py-1 bg-orange-600 rounded text-xs">ElevenLabs</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/MuhammadAbdullahAI2502/Voice-Assitance-AI" target="_blank" rel="noopener noreferrer" class="text-neon-cyan hover:underline text-sm">GitHub</a>
+                            <a href="https://vcic5qsbtkucvfukjrbbwbo.streamlit.app/" target="_blank" rel="noopener noreferrer" class="text-neon-cyan hover:underline text-sm">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 8 -->
+                <div class="glassmorphism rounded-xl overflow-hidden hover:scale-105 hover:glow-cyan transition-all duration-300 fade-in project-card" data-category="dl,ml">
+                    <div class="h-48 bg-gradient-to-br from-lime-500 to-green-500 flex items-center justify-center project-image">
+                        <img src="../Pics/Pic-09.png" alt="AI Image Classifier Screenshot" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">AI Image Classifier</h3>
+                        <p class="text-gray-300 text-sm mb-4">Computer vision model for real-time image classification and object detection</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-lime-600 rounded text-xs">PyTorch</span>
+                            <span class="px-2 py-1 bg-lime-600 rounded text-xs">OpenCV</span>
+                            <span class="px-2 py-1 bg-lime-600 rounded text-xs">Flask</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/MuhammadAbdullahAI2502/AI-Image-Classifier" target="_blank" rel="noopener noreferrer" class="text-neon-cyan hover:underline text-sm">GitHub</a>
+                            <a href="https://ai-image-classifier-9ra63eq7iywajuocrcna2w.streamlit.app/" target="_blank" rel="noopener noreferrer" class="text-neon-cyan hover:underline text-sm">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 9 -->
+                <div class="glassmorphism rounded-xl overflow-hidden hover:scale-105 hover:glow-cyan transition-all duration-300 fade-in project-card" data-category="nlp">
+                    <div class="h-48 bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center project-image">
+                        <img src="../Pics/Pic-05.png" alt="Sentiment-Analyzer Screenshot" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Sentiment-Analyzer</h3>
+                        <p class="text-gray-300 text-sm mb-4"> This Python-based project analyzes text data and predicts sentiment—positive, negative, or neutral.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-cyan-600 rounded text-xs">NLP</span>
+                            <span class="px-2 py-1 bg-cyan-600 rounded text-xs">HuggingFace</span>
+                            <span class="px-2 py-1 bg-cyan-600 rounded text-xs">Python</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/MuhammadAbdullahAI2502/Sentiment-Analyzer" target="_blank" rel="noopener noreferrer" class="text-neon-cyan hover:underline text-sm">GitHub</a>
+                            <a href="https://sentiment-analyzer-pz4jnvozzk7dv4aylmp9st.streamlit.app/" target="_blank" rel="noopener noreferrer" class="text-neon-cyan hover:underline text-sm">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 12 -->
+                <div class="glassmorphism rounded-xl overflow-hidden hover:scale-105 hover:glow-cyan transition-all duration-300 fade-in project-card" data-category="nlp,dl">
+                    <div class="h-48 bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center project-image">
+                        <img src="../Pics/Pic-07.png" alt="AI Code Assistant Screenshot" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">AI Code Assistant</h3>
+                        <p class="text-gray-300 text-sm mb-4">Intelligent code completion and debugging assistant powered by LLMs</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-violet-600 rounded text-xs">TypeScript</span>
+                            <span class="px-2 py-1 bg-violet-600 rounded text-xs">OpenAI</span>
+                            <span class="px-2 py-1 bg-violet-600 rounded text-xs">VSCode API</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/MuhammadAbdullahAI2502/AI-Code-Assistant" target="_blank" rel="noopener noreferrer" class="text-neon-cyan hover:underline text-sm">GitHub</a>
+                            <a href="https://ai-code-assistant-kyqfkged2inzqer46wd6ks.streamlit.app/" target="_blank" rel="noopener noreferrer" class="text-neon-cyan hover:underline text-sm">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-20 px-6 bg-gray-900">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-12 text-glow fade-in">Achievements & Milestones</h2>
+            <div class="relative">
+                <div class="absolute left-8 top-0 bottom-0 w-1 timeline-line rounded-full"></div>
+                
+                <div class="space-y-12">
+                    <div class="flex items-center fade-in timeline-item">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-neon-purple to-neon-cyan flex items-center justify-center glow mr-8">
+                            <span class="text-2xl">🎓</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-neon-cyan">Self-Taught Journey Begins</h3>
+                            <p class="text-gray-300">Started learning programming and AI beyond traditional education</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center fade-in timeline-item">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-neon-cyan to-neon-purple flex items-center justify-center glow mr-8">
+                            <span class="text-2xl">🔬</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-neon-cyan">AI Research Experiments</h3>
+                            <p class="text-gray-300">Conducted independent research on generative models and neural networks</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center fade-in timeline-item">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center glow mr-8">
+                            <span class="text-2xl">💼</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-neon-cyan">Freelance AI Prototypes</h3>
+                            <p class="text-gray-300">Built custom AI solutions for clients across various industries</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center fade-in timeline-item">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-green-500 to-blue-500 flex items-center justify-center glow mr-8">
+                            <span class="text-2xl">🌟</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-neon-cyan">Open Source Contributions</h3>
+                            <p class="text-gray-300">Contributing to AI/ML open source projects and sharing knowledge</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center fade-in timeline-item">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 flex items-center justify-center glow mr-8">
+                            <span class="text-2xl">🏆</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-neon-cyan">AI Specialist Recognition</h3>
+                            <p class="text-gray-300">Recognized expertise in generative and agentic AI systems</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-12 text-glow fade-in">Blog & Insights</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glassmorphism rounded-xl p-6 hover:scale-105 hover:glow transition-all duration-300 fade-in hover:shadow-lg hover:shadow-neon-cyan/20">
+                    <img src="../Blogs/Blog-01.jpg" alt="Neural Network Blog" class="w-16 h-16 mb-4 rounded-full object-cover mx-auto">
+                    <h3 class="text-xl font-semibold mb-3 text-neon-cyan">🧠 Neural Networks Simplified</h3>
+                    <p class="text-gray-300 text-sm mb-4">A visual guide to how AI learns connecting inputs, hidden layers, and outputs to make smart predictions.</p>
+                    <span class="text-neon-purple font-semibold">Coming Soon</span>
+                </div>
+
+                <div class="glassmorphism rounded-xl p-6 hover:scale-105 hover:glow transition-all duration-300 fade-in hover:shadow-lg hover:shadow-neon-cyan/20" style="animation-delay: 0.2s;">
+                    <img src="../Blogs/Blog-02.jpg" alt="RAG Blog" class="w-16 h-16 mb-4 rounded-full object-cover mx-auto">
+                    <h3 class="text-xl font-semibold mb-3 text-neon-cyan">🔍 RAG: Smarter AI Explained</h3>
+                    <p class="text-gray-300 text-sm mb-4">Shows how retrieval and generation work together to make AI more accurate, informed, and reliable.</p>
+                    <span class="text-neon-purple font-semibold">Coming Soon</span>
+                </div>
+
+                <div class="glassmorphism rounded-xl p-6 hover:scale-105 hover:glow transition-all duration-300 fade-in hover:shadow-lg hover:shadow-neon-cyan/20" style="animation-delay: 0.4s;">
+                    <img src="../Blogs/Blog-03.jpg" alt="LangChain Blog" class="w-16 h-16 mb-4 rounded-full object-cover mx-auto">
+                    <h3 class="text-xl font-semibold mb-3 text-neon-cyan">⚙️ LangChain x RAG Power Duo</h3>
+                    <p class="text-gray-300 text-sm mb-4">Explains how LangChain integrates with RAG to build advanced, knowledge-driven AI systems</p>
+                    <span class="text-neon-purple font-semibold">Coming Soon</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-gray-900 relative overflow-hidden">
+        <!-- Floating Particles -->
+        <div class="particle w-3 h-3 top-10 left-10" style="animation-delay: 0s;"></div>
+        <div class="particle w-4 h-4 top-20 right-20" style="animation-delay: 3s;"></div>
+        <div class="particle w-2 h-2 bottom-20 left-20" style="animation-delay: 6s;"></div>
+
+        <div class="container mx-auto max-w-4xl relative z-10">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-4xl font-bold mb-4 text-glow animate-pulse">Let's Build the Future with AI — Together</h2>
+                <p class="text-gray-300">Ready to transform your ideas into intelligent solutions? Let's connect!</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="fade-in" style="animation-delay: 0.2s;">
+                    <form class="space-y-6 glassmorphism p-8 rounded-xl hover:scale-105 transition-transform duration-300">
+                        <div>
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg focus:border-neon-cyan focus:outline-none transition-all focus:glow">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg focus:border-neon-cyan focus:outline-none transition-all focus:glow">
+                        </div>
+                        <div>
+                            <textarea rows="5" placeholder="Your Message" class="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg focus:border-neon-cyan focus:outline-none transition-all focus:glow resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-8 py-3 bg-gradient-to-r from-neon-purple to-neon-cyan rounded-lg font-semibold hover:scale-105 transition-transform pulse-glow">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="fade-in flex flex-col justify-center" style="animation-delay: 0.4s;">
+                    <div class="space-y-6">
+                        <a href="mailto:abdullahgenai12@gmail.com" class="flex items-center space-x-4 hover:text-neon-cyan transition-all hover:scale-105 hover:translate-x-2 group">
+                            <div class="w-12 h-12 rounded-full glassmorphism flex items-center justify-center group-hover:glow group-hover:rotate-12 transition-all">
+                                <i class="fas fa-envelope text-2xl"></i>
+                            </div>
+                            <span>Email Me</span>
+                        </a>
+
+                        <a href="https://github.com/MuhammadAbdullahAI2502" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 hover:text-neon-cyan transition-all hover:scale-105 hover:translate-x-2 group" style="animation-delay: 0.1s;">
+                            <div class="w-12 h-12 rounded-full glassmorphism flex items-center justify-center group-hover:glow group-hover:rotate-12 transition-all">
+                                <i class="fab fa-github text-2xl"></i>
+                            </div>
+                            <span>GitHub</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/abdullahgenai12/" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 hover:text-neon-cyan transition-all hover:scale-105 hover:translate-x-2 group" style="animation-delay: 0.2s;">
+                            <div class="w-12 h-12 rounded-full glassmorphism flex items-center justify-center group-hover:glow group-hover:rotate-12 transition-all">
+                                <i class="fab fa-linkedin text-2xl"></i>
+                            </div>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-gray-800">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0 text-center md:text-left">
+                    <p class="text-gray-400 mb-2">&copy; 2025 Muhammad Abdullah. All rights reserved.</p>
+                    <p class="text-gray-500 text-sm">This website and its content are protected by copyright law. Unauthorized reproduction is prohibited.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#projects" class="text-gray-400 hover:text-neon-cyan transition-colors">Projects</a>
+                    <a href="#blog" class="text-gray-400 hover:text-neon-cyan transition-colors">Blog</a>
+                    <a href="#contact" class="text-gray-400 hover:text-neon-cyan transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="fixed bottom-8 left-8 w-12 h-12 bg-gradient-to-r from-neon-purple to-neon-cyan rounded-full flex items-center justify-center opacity-0 transition-all duration-300 hover:scale-110 glow">
+        <span class="text-xl">↑</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
