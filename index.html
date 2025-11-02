@@ -633,269 +633,152 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 px-6 bg-gray-900 relative overflow-hidden">
-        <style>
-            @media (max-width: 768px) {
-                #contact {
-                    padding: 3rem 1rem !important;
-                }
-                #contact .container {
-                    max-width: 100% !important;
-                    padding: 0 1rem !important;
-                }
-                #contact .grid {
-                    grid-template-columns: 1fr !important;
-                    gap: 2rem !important;
-                }
-                #contact h2 {
-                    font-size: 2.5rem !important;
-                    text-align: center !important;
-                    margin-bottom: 1rem !important;
-                    line-height: 1.2 !important;
-                    word-wrap: break-word !important;
-                }
-                #contact p {
-                    text-align: center !important;
-                    font-size: 1rem !important;
-                    line-height: 1.5 !important;
-                    margin-bottom: 2rem !important;
-                }
-                #contact form {
-                    width: 100% !important;
-                }
-                #contact input, #contact textarea {
-                    width: 100% !important;
-                    font-size: 16px !important;
-                    padding: 0.75rem !important;
-                    border-radius: 8px !important;
-                    background: rgba(255, 255, 255, 0.05) !important;
-                    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-                    color: white !important;
-                }
-                #contact input::placeholder, #contact textarea::placeholder {
-                    color: rgba(255, 255, 255, 0.6) !important;
-                }
-                #contact button[type="submit"] {
-                    width: 100% !important;
-                    padding: 0.875rem 1.5rem !important;
-                    font-size: 1rem !important;
-                    margin-top: 1rem !important;
-                }
-                #contact .flex-col {
-                    align-items: center !important;
-                }
-                #contact .space-y-6 > * + * {
-                    margin-top: 1.5rem !important;
-                }
-                #contact a {
-                    display: flex !important;
-                    align-items: center !important;
-                    justify-content: center !important;
-                    gap: 1rem !important;
-                    padding: 1rem !important;
-                    border-radius: 12px !important;
-                    background: rgba(255, 255, 255, 0.05) !important;
-                    backdrop-filter: blur(10px) !important;
-                    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-                    transition: all 0.3s ease !important;
-                    min-height: 60px !important;
-                }
-                #contact a:hover {
-                    background: rgba(255, 255, 255, 0.1) !important;
-                    transform: translateY(-2px) !important;
-                }
-                #contact .w-12 {
-                    flex-shrink: 0 !important;
-                }
+<!-- Contact Section -->
+<section id="contact" class="py-20 px-6 bg-gray-900 relative overflow-hidden">
+    <style>
+        /* --- Responsive Styling --- */
+        @media (max-width: 768px) {
+            #contact { padding: 3rem 1rem !important; }
+            #contact .container { max-width: 100% !important; padding: 0 1rem !important; }
+            #contact .grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+            #contact h2 { font-size: 2.5rem !important; text-align: center !important; margin-bottom: 1rem !important; }
+            #contact p { text-align: center !important; font-size: 1rem !important; margin-bottom: 2rem !important; }
+            #contact input, #contact textarea {
+                width: 100% !important; font-size: 16px !important; padding: 0.75rem !important;
+                border-radius: 8px !important; background: rgba(255,255,255,0.05) !important;
+                border: 1px solid rgba(255,255,255,0.1) !important; color: white !important;
             }
-
-            @media (max-width: 480px) {
-                #contact {
-                    padding: 2rem 0.75rem !important;
-                }
-                #contact h2 {
-                    font-size: 2rem !important;
-                    margin-bottom: 0.75rem !important;
-                }
-                #contact p {
-                    font-size: 0.9rem !important;
-                    margin-bottom: 1.5rem !important;
-                }
-                #contact input, #contact textarea {
-                    font-size: 16px !important;
-                    padding: 0.75rem !important;
-                    margin-bottom: 0.75rem !important;
-                }
-                #contact button[type="submit"] {
-                    padding: 0.75rem 1.25rem !important;
-                    font-size: 0.95rem !important;
-                }
-                #contact a {
-                    padding: 0.875rem !important;
-                    min-height: 56px !important;
-                    font-size: 0.95rem !important;
-                }
-                #contact .w-12 {
-                    width: 48px !important;
-                    height: 48px !important;
-                }
-                #contact i {
-                    font-size: 1.25rem !important;
-                }
+            #contact button[type="submit"] {
+                width: 100% !important; padding: 0.875rem 1.5rem !important; font-size: 1rem !important;
+                margin-top: 1rem !important;
             }
-        </style>
-        <!-- Floating Particles -->
-        <div class="particle w-3 h-3 top-10 left-10" style="animation-delay: 0s;"></div>
-        <div class="particle w-4 h-4 top-20 right-20" style="animation-delay: 3s;"></div>
-        <div class="particle w-2 h-2 bottom-20 left-20" style="animation-delay: 6s;"></div>
+        }
+        @media (max-width: 480px) {
+            #contact h2 { font-size: 2rem !important; }
+            #contact p { font-size: 0.9rem !important; }
+        }
+    </style>
 
-        <div class="container mx-auto max-w-4xl relative z-10">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-4xl font-bold mb-4 text-glow animate-pulse">Let's Build the Future with AI — Together</h2>
-                <p class="text-gray-300">Ready to transform your ideas into intelligent solutions? Let's connect!</p>
+    <!-- Floating Particles -->
+    <div class="particle w-3 h-3 top-10 left-10"></div>
+    <div class="particle w-4 h-4 top-20 right-20"></div>
+    <div class="particle w-2 h-2 bottom-20 left-20"></div>
+
+    <div class="container mx-auto max-w-4xl relative z-10">
+        <div class="text-center mb-12 fade-in">
+            <h2 class="text-4xl font-bold mb-4 text-glow animate-pulse">
+                Let's Build the Future with AI — Together
+            </h2>
+            <p class="text-gray-300">
+                Ready to transform your ideas into intelligent solutions? Let's connect!
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- ✅ FORM UPDATED FOR EMAILJS -->
+            <div class="fade-in" style="animation-delay: 0.2s;">
+                <form id="contact-form" class="space-y-6 glassmorphism p-8 rounded-xl hover:scale-105 transition-transform duration-300">
+                    <div>
+                        <input type="text" name="user_name" placeholder="Your Name" required
+                               class="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg focus:border-neon-cyan focus:outline-none transition-all focus:glow">
+                    </div>
+                    <div>
+                        <input type="email" name="user_email" placeholder="Your Email" required
+                               class="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg focus:border-neon-cyan focus:outline-none transition-all focus:glow">
+                    </div>
+                    <div>
+                        <textarea name="message" rows="5" placeholder="Your Message" required
+                                  class="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg focus:border-neon-cyan focus:outline-none transition-all focus:glow resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-8 py-3 bg-gradient-to-r from-neon-purple to-neon-cyan rounded-lg font-semibold hover:scale-105 transition-transform pulse-glow">
+                        Send Message
+                    </button>
+                </form>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="fade-in" style="animation-delay: 0.2s;">
-                    <form class="space-y-6 glassmorphism p-8 rounded-xl hover:scale-105 transition-transform duration-300">
-                        <div>
-                            <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg focus:border-neon-cyan focus:outline-none transition-all focus:glow">
+            <div class="fade-in flex flex-col justify-center" style="animation-delay: 0.4s;">
+                <div class="space-y-6">
+                    <a href="mailto:abdullahgenai12@gmail.com" class="flex items-center space-x-4 hover:text-neon-cyan transition-all hover:scale-105 hover:translate-x-2 group">
+                        <div class="w-12 h-12 rounded-full glassmorphism flex items-center justify-center group-hover:glow transition-all">
+                            <i class="fas fa-envelope text-2xl"></i>
                         </div>
-                        <div>
-                            <input type="email" name="email" placeholder="Your Email" class="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg focus:border-neon-cyan focus:outline-none transition-all focus:glow">
+                        <span>Email Me</span>
+                    </a>
+                    <a href="https://github.com/MuhammadAbdullahAI2502" target="_blank" rel="noopener noreferrer"
+                       class="flex items-center space-x-4 hover:text-neon-cyan transition-all hover:scale-105 hover:translate-x-2 group">
+                        <div class="w-12 h-12 rounded-full glassmorphism flex items-center justify-center group-hover:glow transition-all">
+                            <i class="fab fa-github text-2xl"></i>
                         </div>
-                        <div>
-                            <textarea name="message" rows="5" placeholder="Your Message" class="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg focus:border-neon-cyan focus:outline-none transition-all focus:glow resize-none"></textarea>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abdullahgenai12/" target="_blank" rel="noopener noreferrer"
+                       class="flex items-center space-x-4 hover:text-neon-cyan transition-all hover:scale-105 hover:translate-x-2 group">
+                        <div class="w-12 h-12 rounded-full glassmorphism flex items-center justify-center group-hover:glow transition-all">
+                            <i class="fab fa-linkedin text-2xl"></i>
                         </div>
-                        <button type="submit" class="w-full px-8 py-3 bg-gradient-to-r from-neon-purple to-neon-cyan rounded-lg font-semibold hover:scale-105 transition-transform pulse-glow">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-
-                <div class="fade-in flex flex-col justify-center" style="animation-delay: 0.4s;">
-                    <div class="space-y-6">
-                        <a href="mailto:abdullahgenai12@gmail.com" class="flex items-center space-x-4 hover:text-neon-cyan transition-all hover:scale-105 hover:translate-x-2 group">
-                            <div class="w-12 h-12 rounded-full glassmorphism flex items-center justify-center group-hover:glow group-hover:rotate-12 transition-all">
-                                <i class="fas fa-envelope text-2xl"></i>
-                            </div>
-                            <span>Email Me</span>
-                        </a>
-
-                        <a href="https://github.com/MuhammadAbdullahAI2502" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 hover:text-neon-cyan transition-all hover:scale-105 hover:translate-x-2 group" style="animation-delay: 0.1s;">
-                            <div class="w-12 h-12 rounded-full glassmorphism flex items-center justify-center group-hover:glow group-hover:rotate-12 transition-all">
-                                <i class="fab fa-github text-2xl"></i>
-                            </div>
-                            <span>GitHub</span>
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/abdullahgenai12/" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 hover:text-neon-cyan transition-all hover:scale-105 hover:translate-x-2 group" style="animation-delay: 0.2s;">
-                            <div class="w-12 h-12 rounded-full glassmorphism flex items-center justify-center group-hover:glow group-hover:rotate-12 transition-all">
-                                <i class="fab fa-linkedin text-2xl"></i>
-                            </div>
-                            <span>LinkedIn</span>
-                        </a>
-                    </div>
+                        <span>LinkedIn</span>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <script>
-            // Advanced form validation and submission
-            function handleFormSubmission(e) {
-                e.preventDefault();
-                const form = e.target;
-                const formData = new FormData(form);
-                const data = Object.fromEntries(formData);
+    <!-- ✅ EMAILJS SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS
+        (function() {
+            emailjs.init("vg-_HTKQIDHPIEQOY"); // 🔑 replace with your EmailJS public key
+        })();
 
-                // Validate form data
-                if (validateForm(data)) {
-                    submitForm(data);
-                } else {
-                    showFormError('Please fill all required fields correctly.');
-                }
-            }
+        const form = document.getElementById("contact-form");
 
-            // Form validation
-            function validateForm(data) {
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                return data.name && data.email && emailRegex.test(data.email) && data.message;
-            }
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
 
-            // Submit form with loading state
-            async function submitForm(data) {
-                const submitBtn = document.querySelector('button[type="submit"]');
-                const originalText = submitBtn.textContent;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
 
-                submitBtn.textContent = 'Sending...';
-                submitBtn.disabled = true;
-
-                // Construct mailto link
-                const subject = encodeURIComponent('Contact Form Message');
-                const body = encodeURIComponent(`Name: ${data.name}\nEmail: ${data.email}\nMessage: ${data.message}`);
-                const mailto = `mailto:abdullahgenai12@gmail.com?subject=${subject}&body=${body}`;
-
-                // Open email client
-                window.location.href = mailto;
-
-                // Simulate sending delay
-                await new Promise(resolve => setTimeout(resolve, 1000));
-
-                submitBtn.textContent = '✓ Sent!';
-                setTimeout(() => {
-                    submitBtn.textContent = originalText;
-                    submitBtn.disabled = false;
-                }, 2000);
-
-                showSuccessMessage('Thank you! Your email client has opened with the message. Please send it to complete the contact.');
-            }
-
-            // Show success message with animation
-            function showSuccessMessage(message) {
-                const notification = createNotification(message, 'success');
-                document.body.appendChild(notification);
-            }
-
-            // Show error message
-            function showFormError(message) {
-                const notification = createNotification(message, 'error');
-                document.body.appendChild(notification);
-            }
-
-            // Create notification element
-            function createNotification(message, type) {
-                const notification = document.createElement('div');
-                notification.className = `notification ${type}`;
-                notification.style.cssText = `
-                    position: fixed;
-                    top: 20px;
-                    right: 20px;
-                    padding: 15px 20px;
-                    background: ${type === 'success' ? '#00ffff' : '#ff4444'};
-                    color: black;
-                    border-radius: 8px;
-                    z-index: 10000;
-                    transform: translateX(100%);
-                    transition: transform 0.3s ease;
-                `;
-                notification.textContent = message;
-
-                setTimeout(() => notification.style.transform = 'translateX(0)', 100);
-                setTimeout(() => {
-                    notification.style.transform = 'translateX(100%)';
-                    setTimeout(() => notification.remove(), 300);
-                }, 3000);
-
-                return notification;
-            }
-
-            // Form submission
-            document.querySelector('form')?.addEventListener('submit', (e) => {
-                handleFormSubmission(e);
+            emailjs.sendForm("service_gtjbbba", "template_m6wdo0q", form)
+            .then(() => {
+                showNotification("Message sent successfully!", "success");
+                form.reset();
+            }, (error) => {
+                console.error("EmailJS error:", error);
+                showNotification("Failed to send message. Try again later.", "error");
+            })
+            .finally(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
             });
-        </script>
-    </section>
+        });
+
+        function showNotification(message, type) {
+            const notification = document.createElement('div');
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px; right: 20px;
+                background: ${type === "success" ? "#00ffff" : "#ff4444"};
+                color: black;
+                padding: 15px 20px;
+                border-radius: 8px;
+                z-index: 10000;
+                transform: translateX(100%);
+                transition: transform 0.3s ease;
+            `;
+            document.body.appendChild(notification);
+            setTimeout(() => (notification.style.transform = "translateX(0)"), 100);
+            setTimeout(() => {
+                notification.style.transform = "translateX(100%)";
+                setTimeout(() => notification.remove(), 300);
+            }, 3000);
+        }
+    </script>
+</section>
+
 
     <!-- Footer -->
     <footer class="py-12 px-6 border-t border-gray-800">
